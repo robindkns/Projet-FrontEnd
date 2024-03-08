@@ -1,0 +1,63 @@
+.page
+    width: 35px
+    height: 35px
+    background-color: transparent
+    color: white
+    font-weight: bold
+    border-radius: 50%
+    border: none
+    &:hover
+        background-color: #38d2c8
+        color: white
+        cursor: pointer
+
+.pagination
+    width: 100%
+    display: flex
+    justify-content: center
+    color: white
+    gap: 5px
+    margin-top: 2%
+
+.active-page
+    background-color: #38d2c8
+    color: white
+    width: 35px
+    height: 35px
+    font-weight: bold
+    border-radius: 50%
+    border: none
+
+@media ( max-width: 1025px )
+    .pagination
+        width: 80%
+        gap: 7px
+
+    .page
+        width: 29px
+        height: 22px
+
+    .active-page
+        width: 29px
+        height: 22px
+
+@media ( max-width:769px  )
+    .pagination
+        width: 100%
+        gap: 2px
+
+    .page
+        font-size: 12px    
+        width: 20px
+        height: 20px
+    
+    .active-page
+        font-size: 12px
+        width: 20px
+        height: 20px
+    
+@media ( max-width: 426px )
+    .pagination
+        gap: 0
+        display: none
+    

@@ -1,0 +1,193 @@
+.sticky-nav
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 3
+    width: 100vw
+    height: 75px
+    display: flex
+    align-items: center
+    transition: 0.5s
+
+.logo
+    width: 60px
+    height: 60px
+    object-position: center
+    background-color: white
+    border-radius: 50%
+
+.navContainer
+    background-color: transparent
+    height: 80px
+    width: 100vw
+    color: white
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 3
+    display: flex
+    align-items: center
+    transition: 0.5s
+
+.navContent
+    width: 100%
+    display: flex
+    height: 100%
+    justify-content: space-between
+    h1
+        font-weight: 400
+        font-size: 30px
+        font-family: "Josefin Sans"
+
+.logoContainer
+    width: 20%
+    display: flex
+    align-items: center
+    gap: 5%
+    justify-content: center
+
+.logoLink
+    text-decoration: none
+    color: white
+    display: flex
+    align-items: center
+    gap: 5%
+    width: 80%
+
+.navlinks
+    display: flex
+    height: 100%
+    width: 20%
+    gap: 10%
+    align-items: center
+    justify-content: center
+    span
+        height: 26px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 2px
+            width: 0%
+            background-color: #38d2c8
+            transition: 0.3s
+        &:hover
+            color: #38d2c8
+            &::before
+                width: 100%
+    a
+        text-decoration: none
+        font-family: "Josefin Sans"
+        color: white
+        display: flex
+        align-items: center
+        font-size: 23px
+        width: 100%
+        position: relative
+        justify-content: center
+
+.panierLogin
+    width: 20%
+    display: flex
+    justify-content: center
+    height: 100%
+    align-items: center
+    gap: 7%
+
+.icon
+    width: 30px
+    height: 30px
+    object-position: center
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    svg
+        font-size: 35px
+        fill: white
+    svg:hover
+        fill: #38d2c8
+        cursor: pointer
+        transition: 0.3s
+
+.activeUser
+    width: 30px
+    height: 30px
+    object-position: center
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    #user
+        font-size: 35px
+        fill: #38d2c8
+    svg:hover
+        cursor: pointer
+        transition: 0.3s
+
+.panierLoginContainer
+    width: 80%
+    display: flex
+    justify-content: center
+    gap: 10%
+
+.loginDropdown
+    position: absolute
+    top: 45px
+    right: 0
+    background-color: #38d2c8
+    width: 200px
+    height: 200px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border-radius: 7px
+    animation: appear ease-in-out 0.3s
+    box-shadow: 5px 5px 10px 2px #00000084
+
+.loginDropdownContent
+    background-color: #021b2e
+    width: 93%
+    height: 93%
+    border-radius: 7px
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+
+.linkLogs
+    width: 35%
+    height: 50%
+    font-size: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    text-decoration: none
+    color: white
+    gap: 5%
+
+.linkLogs2
+    height: 50%
+    width: 1px
+    background-color: white
+
+.linkLogs:hover
+    svg
+        fill: #38d2c8
+    span
+        color: #38d2c8
+
+.log
+    font-size: 15px
+
+@keyframes appear
+    0%
+        translate: 0 -10px
+        opacity: 0
+    100%
+        translate: 0 0
+        opacity: 1

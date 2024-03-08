@@ -1,0 +1,174 @@
+.game-details
+    height: 90vh
+    width: 100%
+    justify-content: center
+    text-align: center
+    display: flex
+
+.details-container
+    width: 70%
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    gap: 5%
+    position: relative
+
+.details-content
+    width: 50%
+    height: 50%
+    display: flex
+    align-items: center
+    img
+        width: 100%
+        border-radius: 10px
+
+.details-content2
+    width: 50%
+    height: 50%
+    border-radius: 10px
+    h1
+        padding-top: 3%
+        text-decoration: underline
+        text-decoration-color: #38d2c8
+        // padding-bottom: 2%
+        height: 10%
+
+.details-text
+    width: 96%
+    height: 50%
+    text-align: left
+    padding-inline: 2%
+    font-family: "Josefin Sans"
+    font-size: 18px
+    position: relative
+    display: flex
+    flex-direction: column
+    gap: 10px
+    padding-top: 5%
+    p
+        margin: 0
+
+.details-title
+    font-weight: bold
+
+.detail
+    font-style: italic
+
+.platform-logo
+    position: absolute
+    right: 5%
+    bottom: 0
+
+.details-footer
+    width: 96%
+    height: 20%
+    margin-left: 2%
+    margin-right: 2%
+    // margin-top: 5%
+    display: flex
+    align-items: center
+    justify-content: center
+
+.details-links 
+    display: flex
+    width: 50%
+    gap: 10px
+    font-size: 20px
+    align-items: center
+    height: 50%
+    font-family: "Josefin Sans"
+    a
+        color: #38d2c8
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+            color: #3ea29c
+
+.details-btn
+    width: 50%
+    button
+        width: 100%
+        height: 40px
+        font-family: "Josefin Sans"
+        background-color: #38d2c8
+        color: white
+        border: none
+        border-radius: 8px
+        font-size: 17px
+        &:hover
+            cursor: pointer
+            background-color: #3ea29c
+            color: white
+
+.seperator-links
+    height: 100%
+    width: 2px
+    background-color: #38d2c8
+
+.back
+    position: absolute
+    left: 0
+    top: 15%
+    font-family: "livvic", sans-serif
+    text-decoration: none
+    color: white
+    font-weight: 600
+    display: flex
+    align-items: center
+    gap: 10px
+    text-decoration: underline
+    &:hover
+        color: #38d2c8
+
+@media (max-width : 1025px)
+    
+    .details-container
+        width: 80%
+        gap: 3%
+
+    .details-content2 h1
+        font-size: 28px
+
+    .details-text
+        font-size: 16px
+
+    .details-footer
+        margin-top: 5%
+        gap: 5px
+        a
+            font-size: 16px
+
+    .details-btn
+        width: 40%
+
+@media (max-width : 769px)
+    .details-container
+        width: 90%
+
+    .details-links
+        gap: 5px
+        a
+            font-size: 14px
+    .details-btn
+        width: 40%
+        button
+            font-size: 14px
+    .details-footer
+        margin-top: 5%
+
+@media ( max-width: 426px )
+    .details-container
+        flex-direction: column
+        gap: 3%
+    
+    .details-content
+        align-items: flex-end
+        width: 70%
+        height: 40%
+    
+    .details-content2
+        width: 95%
+        height: 45%
+    
+    

@@ -1,0 +1,114 @@
+.signUp
+    width: 100%
+    height: 90vh
+    background-color: #142e42
+    display: flex
+
+.signUpBg
+    background-image: url('../../assets/bglog.jpg')
+    background-size: auto
+    width: 50%
+    height: 100%
+    display: flex
+    align-items: center
+    overflow: hidden
+    justify-content: center
+
+.signUpContainer
+    width: 50%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    form
+        display: flex
+        flex-direction: column
+        width: 80%
+        height: 40%
+        gap: 5%
+        justify-content: center
+    p
+        font-family: "Livvic", sans-serif
+        a
+            color: #38d2c8
+            &:hover
+                cursor: pointer
+                color: #3ea29c
+    button
+        width: 80%
+
+.characters
+    display: flex
+    width: 70%
+    height: 70%
+    justify-content: center
+    align-items: flex-end
+    margin-left: 20%
+
+
+.kratos
+    height: 90%
+    z-index: 1
+    width: 50%
+    margin-right: -25%
+
+.geralt
+    height: 90%
+    width: 90%
+
+.form-grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 5%
+    input
+        padding-inline: 5%
+        padding-block: 2%
+        border-radius: 5px
+        border: none
+        background-color: #021b2e
+        color: white
+        font-family: "Livvic", sans-serif
+        font-size: 20px
+
+.btnSignUp
+    padding-inline: 5%
+    padding-block: 2%
+    border-radius: 5px
+    border: none
+    background-color: #38d2c8
+    color: white
+    font-family: "Livvic", sans-serif
+    font-size: 20px
+    &:hover
+        cursor: pointer
+        background-color: #3ea29c
+
+.error
+    margin: 0
+    color: lightgrey
+    font-size: 12px
+    padding-top: 2%
+
+@media (max-width: 1025px)
+    .geralt
+        width: 450px
+    .kratos
+        width: 450px
+
+@media (max-width: 769px)
+    .signUpBg
+        display: none
+    .signUpContainer
+        width: 100%
+
+@media ( max-width: 426px )
+    .form-grid
+        grid-template-columns: 1fr
+        height: 76%
+        gap: 2%
+    .signUpContainer form
+        height: 70%
+        gap: 2%
+    .signUpContainer
+        justify-content: flex-end

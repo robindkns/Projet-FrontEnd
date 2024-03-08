@@ -1,0 +1,204 @@
+.games
+    width: 100%
+    height: 230vh
+    padding-top: 10%
+
+.games-main
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.filter-container
+    width: 25%
+    height: 100%
+    display: flex
+    justify-content: center
+    font-family: "Josefin Sans"
+
+.games-container
+    width: 75%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.separator
+    width: 2px
+    height: 95%
+    background-color: #5a5e61
+
+.filter-content
+    width: 80%
+    height: 100%
+
+.filter-header
+    width: 100%
+    input
+        width: 90%
+        height: 50px
+        padding-inline: 5%
+        padding-block: 2%
+        font-family: "Josefin Sans"
+        font-size: 20px
+
+.filter-body
+    padding-top: 5%
+    h3
+        font-size: 25px
+    select
+        background-color: transparent
+        color: white
+        font-family: "Josefin Sans"
+        height: 50px
+        font-size: 13px
+        border-radius: 5px
+        width: 100%
+        option
+            color: black
+
+.filter-genres
+    height: 250px
+    font-size: 18px
+    width: 100%
+    overflow: hidden
+    position: relative
+
+.seeMore
+    width: 25%
+    position: absolute
+    bottom: 0
+    left: 35%
+    font-size: 15px
+    border-radius: 5px
+    background-color: transparent
+    color: white
+    border: 1px solid white
+    font-weight: 600
+    font-family: "Livvic", sans-serif
+    transition: 0.3s
+    &:hover
+        cursor: pointer
+        background-color: #38d2c8
+        color: #142e42
+        border-color: #38d2c8
+
+
+.genre:hover
+    cursor: pointer
+    text-decoration: underline
+    color: #38d2c8
+
+.platform
+    display: flex
+    flex-direction: column
+    width: 100%
+    gap: 15px
+    label
+        display: flex
+        align-items: center
+        gap: 10px
+    div
+        display: flex
+        gap: 5px
+        align-items: center
+
+.games-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    width: 90%
+    gap: 10px
+
+.games-grid-footer
+    width: 100%
+    height: 50px
+    background-color: transparent
+    display: flex
+    justify-content: center
+
+.noGame
+    font-family: "Josefin Sans"
+    font-size: 20px
+
+.game 
+    width: 100%
+    p
+        font-family: "Josefin Sans"
+        font-size: 20px
+        font-weight: 700
+    img
+        border-radius: 8px
+        width: 100%
+        transition: 0.3s
+        &:hover
+            cursor: pointer
+            scale: 1.05
+
+.active-genre
+    color: #38d2c8
+    text-decoration: underline
+    font-weight: 700
+
+@media ( max-width: 1441px )
+    .seeMore
+        width: 35%
+
+    .games
+        height: 240vh
+
+@media ( max-width: 1025px )
+    .seeMore
+        left: 50%
+        width: 50%
+    
+    .games
+        height: 190vh
+
+    .game p
+        font-size: 18px
+
+@media ( max-width: 769px )
+    .games
+        height: 285vh
+        padding-top: 15%
+    .seeMore
+        width: 35%
+        left: 65%
+        font-size: 13px
+        height: 35px
+        padding-inline: 5%
+        padding-block: 0%
+    .games-grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 5px
+
+    .platform
+        gap: 5px
+        label
+            gap: 5px
+
+@media ( max-width: 426px )
+    .games
+        height: 510vh
+        padding-top: 30%
+
+    .details-container
+        position: relative
+    
+    .games-grid
+        grid-template-columns: auto
+
+    .games-container
+        width: 60%
+
+    .filter-container
+        width: 40%
+
+    .seeMore
+        width: 30%
+        left: 70%
+        font-size: 13px
+        height: 35px
+        padding-inline: 0%
+        padding-block: 0%

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap')
+    
+body
+    margin: 0
+    color: white
+
+h1
+    margin: 0
+    font-family: "Livvic", sans-serif
+
+h3
+    font-family: "Livvic", sans-serif
+
+.loader 
+    width: 48px
+    height: 48px
+    border: 3px dotted #FFF
+    border-style: solid solid dotted dotted
+    border-radius: 50%
+    display: inline-block
+    position: relative
+    box-sizing: border-box
+    animation: rotation 2s linear infinite
+
+.loader::after 
+    content: ''  
+    box-sizing: border-box
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    margin: auto
+    border: 3px dotted #38d2c8
+    border-style: solid solid dotted
+    width: 24px
+    height: 24px
+    border-radius: 50%
+    animation: rotationBack 1s linear infinite
+    transform-origin: center center
+
+.loaderContainer
+    position: absolute
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background-color: black
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 100
+
+
+.lightmode3
+    background-color: #255458
+    color: white
+
+.lightmode2
+    background-color: #255458
+
+.darkmode2  
+    background-color: #021b2e
+
+.lightmode
+    background-color: #5da5ab
+    color: #142e42
+    a
+        color: #142e42
+        &:hover
+            color: #3d827e
+
+.darkmode
+    background-color: #142e42
+    color: white
+    a
+        color: white
+        &:hover
+            color: #38d2c8
+
+.not-found
+    background-color: #142e42
+    color: white
+    font-family: "Livvic", sans-serif
+    height: 90vh
+    margin: 0 
+    display: flex
+    align-items: center
+    justify-content: center 
+    flex-direction: column
+    a
+        font-size: 35px
+        text-decoration: none
+        color: white
+        font-weight: bold
+        font-family: "Livvic", sans-serif
+        border: 1px solid white
+        padding-inline: 20px
+        padding-block: 10px
+        border-radius: 10px
+        &:hover
+            background-color: #38d2c8
+            border-color: #38d2c8
+    h1
+        margin: 0
+    
+@keyframes rotation 
+    0% 
+        transform: rotate(0deg)
+
+    100% 
+        transform: rotate(360deg)
+
+@keyframes rotationBack 
+    0% 
+        transform: rotate(0deg)
+    100% 
+        transform: rotate(-360deg)
